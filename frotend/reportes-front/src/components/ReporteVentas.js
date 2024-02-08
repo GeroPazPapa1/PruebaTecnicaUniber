@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Table } from 'react-bootstrap';
-import './ReporteVentas.css'; // Importa el archivo CSS para personalizar los estilos
+import './ReporteVentas.css'; 
 
 function ReporteVentas() {
   const [ventas, setVentas] = useState([]);

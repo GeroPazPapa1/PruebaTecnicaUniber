@@ -1,19 +1,15 @@
-// server.js
-
-// Importar las dependencias necesarias
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const mysql = require("mysql");
 
-// Inicializar la aplicación de Express
 const app = express();
 
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
 
-// Crear la conexión a la base de datos
+// Conexión a la base de datos
 const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
@@ -22,7 +18,7 @@ const connection = mysql.createConnection({
   port: 3306,
 });
 
-// Conectar a la base de datos
+// Conecta a la base de datos
 connection.connect((err) => {
   if (err) {
     console.error("Error al conectar a la base de datos:", err);
@@ -31,11 +27,10 @@ connection.connect((err) => {
   console.log("Conexión establecida correctamente a la base de datos MySQL");
 });
 
-// Rutas
 
 // Reporte de Ventas
 app.get("/reporte-ventas", (req, res) => {
-  // Realizar consulta a la base de datos
+  // Realiza consulta a la base de datos
   connection.query(
     `SELECT c.ID AS 'ID DE MOVIMIENTO DE VENTAS',
     c.TOTAL AS 'TOTAL DEL MOVIMIENTO EN PESOS',
@@ -57,7 +52,7 @@ ORDER BY c.FEC DESC;`,
 
 // Reporte de Entregas
 app.get("/reporte-entregas", (req, res) => {
-  // Realizar consulta a la base de datos
+  // Realiza consulta a la base de datos
   connection.query(
     `SELECT 
     ec.ID AS ID_DE_ENTREGA,
@@ -83,7 +78,7 @@ GROUP BY ec.ID, ec.FECHA, ec.SUC ;
   );
 });
 
-// Puerto de escucha
+// Puerto 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Servidor escuchando en el puerto ${PORT}`);

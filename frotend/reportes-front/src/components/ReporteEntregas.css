@@ -1,14 +1,13 @@
-
 .reporte-entregas-container {
     margin: 20px;
-    font-family: 'Roboto', sans-serif; /* Cambia la fuente de texto */
-    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+    font-family: 'Roboto', sans-serif; 
+    overflow-x: hidden; 
 }
 
 .tabla-reportes {
     font-size: 14px;
     border-collapse: collapse;
-    font-family: 'Roboto', sans-serif; /* Cambia la fuente de texto */
+    font-family: 'Roboto', sans-serif; 
     width: 100%;
 }
 
