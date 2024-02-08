@@ -1,0 +1,42 @@
+
+.reporte-entregas-container {
+    margin: 20px;
+    font-family: 'Roboto', sans-serif; /* Cambia la fuente de texto */
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+}
+
+.tabla-reportes {
+    font-size: 14px;
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif; /* Cambia la fuente de texto */
+    width: 100%;
+}
+
+.tabla-reportes th,
+.tabla-reportes td {
+    padding: 8px;
+    border: 1px solid #fefefe;
+}
+
+.tabla-reportes th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.tabla-reportes th:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+.tabla-reportes td {
+    text-align: center;
+}
+
+.tabla-reportes tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.tabla-reportes tbody tr:hover {
+    background-color: #57d728;
+    transform: scale(1.004);
+}
