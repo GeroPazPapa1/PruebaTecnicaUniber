@@ -9,3 +9,7 @@ Desarrollé componentes tanto para el frontend como para el backend, como Report
 Para dar estilo a la aplicación, creé archivos CSS donde definí reglas de estilo para los diferentes componentes. Personalicé las tablas de reportes, contenedores y otros elementos de la interfaz de usuario para que se vean atractivos y coherentes.
 
 Finalmente, para controlar las versiones de mi código, integré mi proyecto con GitHub. Inicialicé un repositorio, agregué los archivos, realicé el primer commit y luego empujé los cambios al repositorio remoto.
+
+Las URL de ambos reportes son:
+ http://localhost:3000/reporte-ventas
+http://localhost:3000/reporte-entregas
