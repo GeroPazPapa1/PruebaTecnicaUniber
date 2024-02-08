@@ -1,0 +1,11 @@
+Para comenzar este proyecto, configuré una aplicación React.js desde cero utilizando el comando npx create-react-app. Luego, instalé las dependencias necesarias, incluyendo react-bootstrap para obtener componentes preestilados de Bootstrap y node-fetch para realizar solicitudes HTTP en el frontend.
+
+En el backend, establecí un servidor utilizando Express.js y Node.js. Instalé las dependencias con npm install express cors, donde express es el marco de trabajo de Node.js y cors permite el acceso cruzado entre dominios.
+
+Una vez instaladas las dependencias, inicié el servidor backend utilizando el comando node server.js, mientras que en el frontend, utilicé npm start para iniciar el frontend de React.
+
+Desarrollé componentes tanto para el frontend como para el backend, como ReporteEntregas.js y ReporteVentas.js, para manejar los reportes de entregas y ventas, respectivamente. Configuré las rutas y controladores en el backend para manejar las solicitudes de datos.
+
+Para dar estilo a la aplicación, creé archivos CSS donde definí reglas de estilo para los diferentes componentes. Personalicé las tablas de reportes, contenedores y otros elementos de la interfaz de usuario para que se vean atractivos y coherentes.
+
+Finalmente, para controlar las versiones de mi código, integré mi proyecto con GitHub. Inicialicé un repositorio, agregué los archivos, realicé el primer commit y luego empujé los cambios al repositorio remoto.
